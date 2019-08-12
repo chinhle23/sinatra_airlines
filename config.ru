@@ -1,2 +1,2 @@
-require './hello_app'
+require './sinatra_airlines'
 run Sinatra::Application
