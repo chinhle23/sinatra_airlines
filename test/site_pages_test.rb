@@ -16,12 +16,12 @@ class SpreedlyAppTest < Minitest::Test
     assert doc(last_response).at_css('nav')
   end
 
-  def test_about
-    get '/about'
+  def test_result
+    get '/result'
     assert last_response.ok?
     assert doc(last_response).at_css('h1')
     title_content = doc(last_response).at_css('title').content
-    assert_equal 'Spreedly Airlines | About', title_content
+    assert_equal 'Spreedly Airlines | Result', title_content
   end
 
   def test_spreedly

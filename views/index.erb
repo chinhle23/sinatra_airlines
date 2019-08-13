@@ -2,8 +2,12 @@
  
 <p></p>
 
-<form id="payment-form" action="https://yoursite.com/checkout">
+<form id="payment-form" action="/result">
+  <input type="hidden" name="spreedly_environment_key" id="spreedly_environment_key">
   <input type="hidden" name="payment_method_token" id="payment_method_token">
+  <input type="hidden" name="full_name" id="full_name">
+  <input type="hidden" name="month" id="month">
+  <input type="hidden" name="year" id="year">
   <input type="button" value="Enter Payment Info" onclick="SpreedlyExpress.openView();">
 </form>
  
