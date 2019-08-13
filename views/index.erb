@@ -1,7 +1,10 @@
 <h1>Spreedly Airlines</h1>
  
-<p><%= Time.now %></p>
+<p></p>
+
+<form id="payment-form" action="https://yoursite.com/checkout">
+  <input type="hidden" name="payment_method_token" id="payment_method_token">
+  <input type="button" value="Enter Payment Info" onclick="SpreedlyExpress.openView();">
+</form>
  
-<a class="sator-square" href="/palindrome">
- <img src="/images/sator_square.jpg">
-</a>
+
